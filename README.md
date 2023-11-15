@@ -1,6 +1,2 @@
 # IELTSWays
 
-
-
-
-first push
