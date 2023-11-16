@@ -8,7 +8,9 @@
 [![](https://img.shields.io/badge/Django-4.1-green)](https://www.djangoproject.com/)
 
 <br>
-![example](https://github.com/nimadorostkar/human-detection/blob/master/data/images/simple.gif)
+
+![example](https://github.com/nimadorostkar/IELTSWays/blob/main/docs/screenshot.png)
+
 <br>
 
 
