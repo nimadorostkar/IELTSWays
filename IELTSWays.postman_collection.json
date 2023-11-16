@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "373f737e-02c6-43c1-865e-3ce78baea947",
+		"name": "IELTSWays",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31197736"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"national_id\": \"2620376513\",\n    \"password\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/login",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"national_id\": \"2620376513\",\n    \"first_name\": \"nima\",\n    \"last_name\": \"dorostkar\",\n    \"password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/register",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/logout",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNCIsImNyZWF0ZWRfYXQiOiIyMDIzLTExLTE2IDEwOjE3OjM3ICswMDAwIiwidHlwZSI6InJlZnJlc2giLCJhY2Nlc3MiOiJleUpoYkdjaU9pSklVelV4TWlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlYMmxrSWpvaU5DSXNJbU55WldGMFpXUmZZWFFpT2lJeU1ESXpMVEV4TFRFMklERXdPakUzT2pNM0lDc3dNREF3SWl3aWRIbHdaU0k2SW1GalkyVnpjeUo5LlRmb1F5WTNIWDlRV2x0VUJDQ0ZfUXR4WVNqTWMyNld2T2x4Vzl4a2NENW9lQUwtbXhkVkNjbk5ydDd4OVhuNXBRMF84R0NheWRhbDdWaXNoTmlxbFp3In0.6UuLR9wDhW1mMs8v6RLqywmQhIciAAai1aQCVBnRg2jC8Bxe3pwHmJVkA7V8WFsoEL2Rupp2MLzJDAAsIupkBQ\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/refresh",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "overview",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/overview",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"overview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user validation",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/is-valid",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"is-valid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "withdraw",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/withdraw",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/accounts/remove",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"accounts",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin panel",
+			"item": [
+				{
+					"name": "registered users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/admin-panel/registered-users?created_at=2023-11-16&ordering=created_at&withdraw=true&search=test name",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"admin-panel",
+								"registered-users"
+							],
+							"query": [
+								{
+									"key": "created_at",
+									"value": "2023-11-16"
+								},
+								{
+									"key": "ordering",
+									"value": "created_at"
+								},
+								{
+									"key": "withdraw",
+									"value": "true"
+								},
+								{
+									"key": "search",
+									"value": "test name"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove user [id]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/admin-panel/remove/2",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"admin-panel",
+								"remove",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}",
+					"host": [
+						"{{BaseURL}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseURL",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
