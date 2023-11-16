@@ -5,7 +5,8 @@ from accounts.models.user_manager import UserManager
 class User(AbstractUser):
     username = None
     national_id = models.CharField(max_length=11, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateField(auto_now_add=True)
+    withdraw = models.BooleanField(default=False)
 
     EMAIL_FIELD = "email"
     USERNAME_FIELD = "national_id"

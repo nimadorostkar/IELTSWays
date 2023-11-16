@@ -1,8 +1,7 @@
 from django.urls import path
-from admin_panel.views import AdminOverView, UsersCountView, InvoicesCountView
+from admin_panel.views import RegUserView, RemoveUserView
 
 urlpatterns = [
-    #path("overview", AdminOverView.as_view(), name="overview"),
-    #path("users-count", UsersCountView.as_view(), name="users-count"),
-    #path("invoices-count", InvoicesCountView.as_view(), name="invoices-count"),
+    path("registered-users", RegUserView.as_view(), name="registered-users"),
+    path("remove/<int:id>", RemoveUserView.as_view(), name="remove"),
 ]
