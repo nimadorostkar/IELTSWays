@@ -45,6 +45,5 @@ class RemoveUserView(APIView):
             user = User.objects.get(id=self.kwargs["id"])
             user.delete()
             return Response("User removed successfully.", status=status.HTTP_200_OK)
-
         except:
             return Response("User not found or something went wrong, try again.", status=status.HTTP_400_BAD_REQUEST)
