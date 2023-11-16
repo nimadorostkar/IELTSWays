@@ -7,10 +7,9 @@
 [![](https://img.shields.io/badge/python-3.10-orange)](https://www.python.org/)
 [![](https://img.shields.io/badge/Django-4.1-green)](https://www.djangoproject.com/)
 
-
-
+<br>
 ![example](https://github.com/nimadorostkar/human-detection/blob/master/data/images/simple.gif)
-
+<br>
 
 
 ## How to run
