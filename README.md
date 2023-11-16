@@ -1,8 +1,15 @@
-# IELTSWays Back-end
+# IELTSWays Back-end service
+
+### Online IELTS Mock tests platform.
+
 
 
 [![](https://img.shields.io/badge/python-3.10-orange)](https://www.python.org/)
 [![](https://img.shields.io/badge/Django-4.1-green)](https://www.djangoproject.com/)
+
+
+
+![example](https://github.com/nimadorostkar/human-detection/blob/master/data/images/simple.gif)
 
 
 
@@ -11,7 +18,7 @@
 1. Clone this repository
 
 ```bash
-git clone https://github.com/rizostudio/istro-back
+git https://github.com/nimadorostkar/IELTSWays
 ```
 
 2. Install dependencies
@@ -31,17 +38,22 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-5. Make sure you have Postgredb running (Production)
+5. also you can run tests manually(Development):
 
-6. you can run them manually, after the containers spin up, like so:
+```bash
+python manage.py test
+```
+
+6. Make sure you have Postgredb running (Production)
+
+7. you can run them manually, after the containers spin up, like so:
 
 ```bash
 docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate   
 ```
 
-
-7. Build the image and spin up the two containers
+8. Build the image and spin up the two containers
 
 ```bash
 docker-compose up -d --build
