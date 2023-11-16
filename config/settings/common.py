@@ -17,11 +17,6 @@ def get_env(key, default=None, optinal=False):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
-
-
 # APP CONFIGURATION
 DJANGO_APPS = (
     "django.contrib.auth",
@@ -179,23 +174,7 @@ REST_FRAMEWORK = {
 
 MAX_UPLOAD_SIZE = 5242880
 
-# SMS CONFIGURATION
-KAVENEGAR_API_KEY = get_env("KAVENEGAR_API_KEY", default="")
-KAVENEGAR_TEMPLATE = get_env("KAVENEGAR_TEMPLATE", default="otp")
-KAVENEGAR_TEMPLATE_PASS = get_env("KAVENEGAR_TEMPLATE_PASS", default="forgot-pass")
-# END SMS CONFIGURATION
-
 APPEND_SLASH = True
 
-
-# ZARRINPAL CONFIGURATION
-ZARRINPAL_URL="https://api.zarinpal.com/pg/"
-ZARRINPAL_MERCHANT_ID = "00000000-0000-0000-0000-000000000000"
-ZP_API_REQUEST = "https://sandbox.zarinpal.com/pg/rest/WebGate/PaymentRequest.json"
-ZP_API_VERIFY = "https://sandbox.zarinpal.com/pg/rest/WebGate/PaymentVerification.json"
-ZP_API_STARTPAY = "https://sandbox.zarinpal.com/pg/StartPay/"
-ZARIN_CALL_BACK = 'https://api.istroco.com/invoices/payment-verify/'
-#ZARIN_CALL_BACK = 'http://127.0.0.1:8000/invoices/payment-verify/'
-# END ZARRINPAL CONFIGURATION
 
 
