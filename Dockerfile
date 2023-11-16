@@ -12,5 +12,4 @@ RUN pip install -r requirements/requirements.txt
 
 COPY . /ieltsways-back
 
-
 EXPOSE 8000 9000
