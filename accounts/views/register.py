@@ -1,21 +1,19 @@
 from django.db import transaction
 from django.utils.translation import gettext as _
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from accounts.functions import get_user_data
-from accounts.serializers import RegisterSerializer, UserSerializer
+from accounts.serializers import UserSerializer
 
 
-class Register(APIView):
-    permission_classes = [IsAuthenticated]
+class UserRegister(APIView):
+    permission_classes = [AllowAny]
+    serializer_class = UserSerializer
 
     @transaction.atomic
     def patch(self, *args, **kwargs):
-        user = self.request.user
         data = self.request.data
-
         serializer = RegisterSerializer(user, data=data, partial=True)
         if not serializer.is_valid():
             return Response(

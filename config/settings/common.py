@@ -42,8 +42,6 @@ THIRD_PARTY_APPS = (
 LOCAL_APPS = (
     "accounts",
     "admin_panel",
-    "letter",
-    "invoice",
     'django_filters',
 )
 
