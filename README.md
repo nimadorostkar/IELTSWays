@@ -1,5 +1,9 @@
 # IELTSWays Back-end service
 
+https://ioc.ieltsways.com/otp
+https://api.ieltsways.com/otp
+
+
 ### Online IELTS Mock tests platform.
 
 
